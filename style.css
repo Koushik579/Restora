@@ -1,0 +1,534 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+NZ+Basic:wght@100..400&family=Ramaraja&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/*======================================================================================================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,html{
+    background-color: rgba(25, 26, 25);
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Sansation", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  transition: color 0.5s ease;
+}
+#sidebarToggle {
+  display: none;
+}
+#menuButton {
+  display: none;
+}
+
+.parent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+/*==========================Header==================*/
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+/*   background-color: rgba(25, 26, 25); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  width: 100%;
+  z-index: 8;
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 15px;
+}
+.nav-links a {
+  margin-right: 70px;
+  color: rgb(252, 246, 234);
+  transition: color 0.5s ease;
+}
+.nav-links a:not(.bk-btn):hover {
+  color: rgba(255, 180, 3);
+}
+.nav-links bk-btn a:hover{
+  color: rgb(252, 246, 234);
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.logoImg {
+  margin-left: 30px;
+}
+.logoImg img {
+  height: 36px;
+  width: 36px;
+  transition: transform 0.5s ease;
+}
+.logoImg img:hover {
+  transform: rotate(360deg);
+}
+.logoTxt {
+  padding: auto;
+  margin-left: 10px;
+}
+.logoTxt h2 {
+  font-family: "Pacifico", cursive;
+  letter-spacing: 1px;
+  font-optical-sizing: 1px;
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+  color: rgba(255, 180, 3);
+}
+#menuOpen svg {
+  cursor: pointer;
+  transition: transform 0.8s ease;
+}
+#menuOpen svg:hover {
+  transform: rotate(180deg);
+}
+#menuClose svg {
+  transition: transform 0.8s ease;
+  cursor: pointer;
+}
+#menuClose svg:hover {
+  transform: rotate(-180deg);
+}
+/*=======================Sidebar===================*/
+.overlay-label {
+  background-color: rgba(0, 0, 0, 0.404);
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  left: -100%;
+  top: 0;
+  z-index: 9;
+}
+.sideBar {
+  position: fixed;
+  height: 100vh;
+  width: 70%;
+  background-color: rgba(27, 26, 22);
+  left: -100%;
+  top: 0;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition:
+    left 0.8s ease,
+    opacity 0.8s ease;
+  z-index: 10;
+}
+.menuClose {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 40px;
+  padding-right: 40px;
+}
+.sideBar-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+.sideBar-links a {
+  margin-bottom: 15%;
+  color: rgb(252, 246, 234);
+  transition:color 0.5s ease;
+}
+.sideBar-links a:not(.bk-btn):hover {
+  color: rgba(255, 180, 3);
+}
+#menuOpen {
+  padding: 30px;
+}
+
+/*==========================Main Body=============*/
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.topMain {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+/*========================== Hero Image Index page =============*/
+.heroimg{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.backimg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.tint{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(13, 15, 26, 0.85);
+  z-index: 1;
+}
+.heroimgpunch{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 2;
+}
+.foodhover{
+  width: 40%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.foodhover img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 50s ease;
+}
+.foodhover img:hover{
+  transform: rotate(360deg);
+}
+.punchline{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 40px;
+}
+.punchline h1{
+  font-family: "Ramaraja", serif;
+  font-size: 90px;
+  font-weight: 1000;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  padding-left: 20px;
+  color: rgb(252, 246, 234);
+}
+.punchline p{
+  font-family: "Sansation", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: rgb(252, 246, 234);
+}
+/*========================== Hero Image About page =============*/
+.abouttopimg{
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  overflow: hidden;
+}
+.aboutback{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.abouttint{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(13, 15, 26, 0.85);
+  z-index: 1;
+}
+.abouttxt{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 2;
+}
+.abouttxt h1{
+  font-family: "Ramaraja", serif;
+  font-size: 90px;
+  font-weight: 1000;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  padding: 0;
+  color: rgb(252, 246, 234);
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+.abouttxt p{
+  font-family: "Sansation", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: rgb(252, 246, 234);
+  text-align: center;
+}
+.menutype{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding:50px;
+}
+.indian,.continental,.chinese{
+  padding: 20px;
+  background-color: rgba(57, 56, 56, 0.654);
+  border-radius: 15px;
+  min-width: 150px;
+  min-height: 250px;
+}
+.chinese p, .continental p, .indian p{
+  text-align: center;
+  font-family: "Sansation", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: rgb(252, 246, 234);
+}
+.chinese h2, .continental h2, .indian h2{
+  font-family: "Pacifico", cursive;
+  letter-spacing: 1px;
+  font-optical-sizing: 1px;
+  font-style: normal;
+  color: rgba(255, 180, 3);
+  text-align: center;
+}
+.aboutmixtxt{
+  font-family: "Pacifico", cursive;
+  letter-spacing: 1px;
+  font-size: 42px;
+  font-optical-sizing: 1px;
+  font-style: normal;
+  color: rgba(255, 180, 3);
+  text-align: center;
+}
+.chefs{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ align-items: center;
+ width: 100%;
+ overflow: hidden;
+}
+.chef1,.chef2,.chef3{
+  height: 300px;
+  width: 200px;
+  padding: 20px;
+  margin:50px;
+  background-color: rgba(57, 56, 56, 0.654);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.chefs h2{
+  font-family: "Ramaraja", serif;
+  letter-spacing: 1px;
+  font-optical-sizing: 1px;
+  font-style: normal;
+  color: rgba(255, 180, 3);
+  text-align: center;
+}
+.chefs p{
+  text-align: center;
+  font-family: "Sansation", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: rgb(252, 246, 234);
+}
+.chefs img{
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+}
+/*==========================Hero Image Button =============*/
+.book-btn {
+  background-image: linear-gradient(to right, #F09819 0%, #EDDE5D 51%, #F09819 100%);
+}
+
+.book-btn {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.book-btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*==================================================*/
+.midMain {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.botMain {
+  background-color: rgba(169, 69, 199, 0.418);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*==========================Footer====================*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  border-top: 1px solid rgb(252, 246, 234);
+}
+.footlogo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+.footlogo img{
+  height: 24px;
+  width: 24px;
+  margin-left: -40px;
+}
+.footlogo h4{
+  font-family: "Pacifico", cursive;
+  letter-spacing: 1px;
+  font-optical-sizing: 1px;
+  font-weight: 500;
+  font-style: normal;
+  color: rgb(252, 246, 234);
+  margin-left: -10px;
+}
+.footcontent{
+  text-align: center;
+  color: rgb(252, 246, 234);
+}
+/*====================Mobile View=====================*/
+@media (max-width: 1040px) {
+  .header {
+    justify-content: flex-start;
+  }
+  .logoImg {
+    margin-left: 0;
+  }
+  .nav-links {
+    display: none;
+  }
+  #menuButton {
+    display: block;
+  }
+  #sidebarToggle:checked ~ .sideBar {
+    left: 0;
+    opacity: 1;
+  }
+  #sidebarToggle:checked ~ .overlay-label {
+    left: 0;
+  }
+  .topMain{
+    height: auto;
+  }
+  .heroimg{
+    height: auto;
+    overflow: visible;
+  }
+  .heroimgpunch{
+    position: relative;
+    flex-direction: column;
+    height: auto;
+  }
+  .punchline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35%;
+    padding-bottom: 10px;
+
+  }
+  .punchline h1{
+    text-align: center;
+    padding:10px;
+  }
+  .punchline p{
+    text-align: center;
+  }
+  .foodhover{
+    margin-bottom: 5%;
+  }
+  .menutype{
+    flex-direction: column;
+    
+  }
+  .menutype div{
+    margin-bottom: 15px;
+  }
+  .chefs div{
+    width: 30%;
+    margin: 20px;
+  }
+}
