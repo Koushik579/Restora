@@ -24,6 +24,15 @@ a {
 #menuButton {
   display: none;
 }
+input{
+  width: 70%;
+  height: 40px;
+  border-radius: 20px;
+  border:none;
+  padding: 15px;
+  background-color: rgba(46, 46, 45, 0.46);
+  color: #f7eed3;
+}
 
 .parent {
   position: relative;
@@ -250,147 +259,6 @@ a {
   margin-bottom: 20px;
   color: rgb(252, 246, 234);
 }
-/*========================== Hero Image About page =============*/
-.abouttopimg{
-  position: relative;
-  width: 100%;
-  min-height: 500px;
-  overflow: hidden;
-}
-.aboutback{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-.abouttint{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(13, 15, 26, 0.85);
-  z-index: 1;
-}
-.abouttxt{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  z-index: 2;
-}
-.abouttxt h1{
-  font-family: "Ramaraja", serif;
-  font-size: 90px;
-  font-weight: 1000;
-  letter-spacing: 1px;
-  line-height: 1.2;
-  padding: 0;
-  color: rgb(252, 246, 234);
-  margin-top: 60px;
-  margin-bottom: 0;
-}
-.abouttxt p{
-  font-family: "Sansation", sans-serif;
-  font-size: 20px;
-  letter-spacing: 1px;
-  line-height: 1.2;
-  padding: 20px;
-  margin-bottom: 20px;
-  color: rgb(252, 246, 234);
-  text-align: center;
-}
-.menutype{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  padding:50px;
-}
-.indian,.continental,.chinese{
-  padding: 20px;
-  background-color: rgba(57, 56, 56, 0.654);
-  border-radius: 15px;
-  min-width: 150px;
-  min-height: 250px;
-}
-.chinese p, .continental p, .indian p{
-  text-align: center;
-  font-family: "Sansation", sans-serif;
-  font-size: 20px;
-  letter-spacing: 1px;
-  line-height: 1.2;
-  padding: 20px;
-  margin-bottom: 20px;
-  color: rgb(252, 246, 234);
-}
-.chinese h2, .continental h2, .indian h2{
-  font-family: "Pacifico", cursive;
-  letter-spacing: 1px;
-  font-optical-sizing: 1px;
-  font-style: normal;
-  color: rgba(255, 180, 3);
-  text-align: center;
-}
-.aboutmixtxt{
-  font-family: "Pacifico", cursive;
-  letter-spacing: 1px;
-  font-size: 42px;
-  font-optical-sizing: 1px;
-  font-style: normal;
-  color: rgba(255, 180, 3);
-  text-align: center;
-}
-.chefs{
- display: flex;
- flex-direction: row;
- justify-content: space-evenly;
- align-items: center;
- width: 100%;
- overflow: hidden;
-}
-.chef1,.chef2,.chef3{
-  height: 300px;
-  width: 200px;
-  padding: 20px;
-  margin:50px;
-  background-color: rgba(57, 56, 56, 0.654);
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.chefs h2{
-  font-family: "Ramaraja", serif;
-  letter-spacing: 1px;
-  font-optical-sizing: 1px;
-  font-style: normal;
-  color: rgba(255, 180, 3);
-  text-align: center;
-}
-.chefs p{
-  text-align: center;
-  font-family: "Sansation", sans-serif;
-  font-size: 14px;
-  letter-spacing: 1px;
-  line-height: 1.2;
-  padding: 20px;
-  margin-bottom: 20px;
-  color: rgb(252, 246, 234);
-}
-.chefs img{
-  height: 100px;
-  width: 100px;
-  border-radius: 100px;
-}
 /*==========================Hero Image Button =============*/
 .book-btn {
   background-image: linear-gradient(to right, #F09819 0%, #EDDE5D 51%, #F09819 100%);
@@ -426,13 +294,13 @@ a {
   align-items: center;
 }
 .botMain {
-  background-color: rgba(169, 69, 199, 0.418);
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 /*==========================Footer====================*/
 .footer {
   display: flex;
@@ -441,7 +309,7 @@ a {
   align-items: center;
   width: 100%;
   height: 150px;
-  border-top: 1px solid rgb(252, 246, 234);
+  border-top: 1px solid rgba(252, 246, 234, 0.46);
 }
 .footlogo{
   display: flex;

@@ -1,0 +1,195 @@
+/*========================== Hero Image About page =============*/
+.abouttopimg{
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  overflow: hidden;
+}
+.aboutback{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.abouttint{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(13, 15, 26, 0.85);
+  z-index: 1;
+}
+.abouttxt{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 2;
+}
+.abouttxt h1{
+  font-family: "Ramaraja", serif;
+  font-size: 90px;
+  font-weight: 1000;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  padding: 0;
+  color: rgb(252, 246, 234);
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+.abouttxt p{
+  font-family: "Sansation", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: rgb(252, 246, 234);
+  text-align: center;
+}
+.menutype{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding:50px;
+}
+.indian,.continental,.chinese{
+  padding: 20px;
+  background-color: rgba(57, 56, 56, 0.654);
+  border-radius: 15px;
+  min-width: 150px;
+  min-height: 250px;
+}
+.chinese p, .continental p, .indian p{
+  text-align: center;
+  font-family: "Sansation", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: rgb(252, 246, 234);
+}
+.chinese h2, .continental h2, .indian h2{
+  font-family: "Pacifico", cursive;
+  letter-spacing: 1px;
+  font-optical-sizing: 1px;
+  font-style: normal;
+  color: rgba(255, 180, 3);
+  text-align: center;
+}
+.aboutmixtxt{
+  margin-top: 70px;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 1px;
+  font-size: 42px;
+  font-optical-sizing: 1px;
+  font-style: normal;
+  color: rgba(255, 180, 3);
+  text-align: center;
+}
+.chefs{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ align-items: center;
+ width: 100%;
+ overflow: hidden;
+}
+.chef1,.chef2,.chef3{
+  height: 300px;
+  width: 200px;
+  padding: 20px;
+  margin:50px;
+  background-color: rgba(57, 56, 56, 0.654);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.chefs h2{
+  font-family: "Ramaraja", serif;
+  letter-spacing: 1px;
+  font-optical-sizing: 1px;
+  font-style: normal;
+  color: rgba(255, 180, 3);
+  text-align: center;
+}
+.chefs p{
+  text-align: center;
+  font-family: "Sansation", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: rgb(252, 246, 234);
+}
+.chefs img{
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+}
+.reviews{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.review1,.review2, .review3, .review4,.review5{
+  width: 400px;
+  height: 150px;
+  padding: 20px;
+  padding-bottom: 40px;
+  margin:30px;
+  margin-bottom: 70px;
+  background-color: rgba(57, 56, 56, 0.654);
+  border-radius: 15px;
+}
+.reviewtop{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.reviewtxt{
+  width: 100%;
+}
+.reviewtxt h3{
+  text-align: start;
+  font-family: "Sansation", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: rgb(252, 246, 234);
+}
+.reviews img{
+    height: 28px;
+    width: 28px;
+    border-radius: 100px;
+    margin-right: 15px;
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.stars img{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
