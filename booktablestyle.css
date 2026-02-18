@@ -40,3 +40,17 @@
 #number{
     width:70%;
 }
+/*====================Mobile View=====================*/
+@media (max-width: 1040px) {
+  .formcontainer{
+    flex-direction: column;
+  }
+  .formbox{
+    width: 100%;
+    padding: 30px;
+  }
+  .formimg{
+    width: 100%;
+    padding: 30px;
+  }
+}

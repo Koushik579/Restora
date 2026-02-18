@@ -145,7 +145,8 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
 }
 .review1,.review2, .review3, .review4,.review5{
   width: 400px;
@@ -192,4 +193,75 @@
     width: 18px;
     height: 18px;
     margin-right: 5px;
+}
+/*====================Mobile View=====================*/
+@media (max-width: 1040px) {
+  .header {
+    justify-content: flex-start;
+  }
+  .logoImg {
+    margin-left: 0;
+  }
+  .nav-links {
+    display: none;
+  }
+  #menuButton {
+    display: block;
+  }
+  #sidebarToggle:checked ~ .sideBar {
+    left: 0;
+    opacity: 1;
+  }
+  #sidebarToggle:checked ~ .overlay-label {
+    left: 0;
+  }
+  .topMain{
+    height: auto;
+  }
+  .heroimg{
+    height: auto;
+    overflow: visible;
+  }
+  .heroimgpunch{
+    position: relative;
+    flex-direction: column;
+    height: auto;
+  }
+  .punchline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35%;
+    padding: 10px;
+
+  }
+  .punchline h1{
+    text-align: center;
+    padding:10px;
+    font-size: 50px;
+  }
+  .punchline p{
+    text-align: center;
+  }
+  .foodhover{
+    margin-bottom: 5%;
+  }
+  .menutype{
+    flex-direction: column;
+    
+  }
+  .menutype div{
+    margin-bottom: 15px;
+  }
+  .chefs div{
+    width: 60%;
+    margin: 20px;
+  }
+  .chefs{
+    flex-direction: column;
+  }
+  .reviews{
+    flex-direction: column;
+  }
 }

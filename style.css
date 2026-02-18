@@ -403,4 +403,10 @@ input{
   .chefs{
     flex-direction: column;
   }
+  .formcontainer{
+    flex-direction: column;
+  }
+  .reviews{
+    flex-direction: column;
+  }
 }
