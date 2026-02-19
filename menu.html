@@ -21,7 +21,7 @@
                         height="36px"
                         viewBox="0 -960 960 960"
                         width="36px"
-                        fill="black"
+                        fill="rgba(255, 180, 3)"
                         >
                         <path
                         d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
@@ -38,7 +38,7 @@
                                 height="36px"
                                 viewBox="0 -960 960 960"
                                 width="36px"
-                                fill="black"
+                                fill="rgba(255, 180, 3)"
                                 >
                                 <path
                                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
@@ -84,21 +84,31 @@
                     <div class="abouttint"></div>
                     <div class="abouttxt">
                         <h1>Menu</h1>
+                        <p>
+                            A celebration of global flavors, our multi-cuisine restaurant brings together the 
+                            finest Indian and international dishes under one roof.<br>
+                            Every plate is crafted with passion, promising a delightful experience that satisfies
+                            every craving.
+                        </p>
                     </div>
                 </div>
                 <div class="togglemenumaindiv">
+                    <input type="radio" name="menu" id="toggleindian" checked>
+                    <input type="radio" name="menu" id="togglecont">
+                    <input type="radio" name="menu" id="togglechinese">
+
                     <div class="togglemenu">
-
-                        <input type="radio" name="menu" id="toggleindian" checked>
-                        <label class="indianback" for="toggleindian">Indian</label>
-                        
-                        <input type="radio" name="menu" id="togglecont">
-                        <label class="contback" for="togglecont">Continental</label>
-
-                        <input type="radio" name="menu" id="togglechinese">
-                        <label class="chineseback" for="togglechinese">Chinese</label>
-
+                        <label for="toggleindian">Indian</label>
+                        <label for="togglecont">Continental</label>
+                        <label for="togglechinese">Chinese</label>
                     </div>
+
+                    <div class="menuimg">
+                        <div class="indianmenu"><img src="img/indianmenu.jpg"></div>
+                        <div class="contmenu"><img src="img/contmenu.jpg"></div>
+                        <div class="chinesemenu"><img src="img/chinesemenu.jpg"></div>
+                    </div>
+
                 </div>
             </div>
         </div>
