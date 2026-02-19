@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restraunt</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aboutstyle.css">
+    <link rel="stylesheet" href="menustyle.css">
 </head>
 
 <body>
@@ -77,16 +79,44 @@
         </div>
         <div class="main"> 
             <div class="topMain">
-                <h2>Top</h2>
-            </div>
-            <div class="midMain">
-                <h2>Middle</h2>
-            </div>
-            <div class="botMain">
-                <h2>Bottom</h2>
+                <div class="abouttopimg">
+                    <img class="aboutback" src="img/menuback.jpg" alt="No Image">
+                    <div class="abouttint"></div>
+                    <div class="abouttxt">
+                        <h1>Menu</h1>
+                    </div>
+                </div>
+                <div class="togglemenumaindiv">
+                    <div class="togglemenu">
+
+                        <input type="radio" name="menu" id="toggleindian" checked>
+                        <label class="indianback" for="toggleindian">Indian</label>
+                        
+                        <input type="radio" name="menu" id="togglecont">
+                        <label class="contback" for="togglecont">Continental</label>
+
+                        <input type="radio" name="menu" id="togglechinese">
+                        <label class="chineseback" for="togglechinese">Chinese</label>
+
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="footer"> <h3>FOOTER</h3> </div>
+        <div class="footer">
+            <div class="footlogo">
+                <div class="logoImg">
+                    <img src="img/whitelogo.png" alt="No Image">
+                </div>
+                <div class="logoTxt">
+                    <h4>Restraunt</h4>
+                </div>
+            </div>
+            <div class="footcontent">
+                <p>Kolkata | Authentic Indian Dining</p>
+                <p>© 2026 All Rights Reserved</p>
+                <p>reated By <span>Koushik Karmakar</span></p>
+            </div> 
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
