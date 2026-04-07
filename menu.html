@@ -92,24 +92,91 @@
                         </p>
                     </div>
                 </div>
-                <div class="togglemenumaindiv">
-                    <input type="radio" name="menu" id="toggleindian" checked>
-                    <input type="radio" name="menu" id="togglecont">
-                    <input type="radio" name="menu" id="togglechinese">
+                <div class="menu-container">
 
-                    <div class="togglemenu">
-                        <label for="toggleindian">Indian</label>
-                        <label for="togglecont">Continental</label>
-                        <label for="togglechinese">Chinese</label>
-                    </div>
+    <h1>Our Menu</h1>
 
-                    <div class="menuimg">
-                        <div class="indianmenu"><img src="img/indianmenu.jpg"></div>
-                        <div class="contmenu"><img src="img/contmenu.jpg"></div>
-                        <div class="chinesemenu"><img src="img/chinesemenu.jpg"></div>
-                    </div>
+    <div class="menu-filters">
+        <button onclick="filterMenu('all', this)">All</button>
+        <button onclick="filterMenu('indian', this)">Indian</button>
+        <button onclick="filterMenu('chinese', this)">Chinese</button>
+        <button onclick="filterMenu('continental', this)">Continental</button>
+        <button onclick="filterMenu('drinks', this)">Drinks</button>
+    </div>
 
-                </div>
+
+    <div class="menu-items">
+
+        <!-- INDIAN -->
+        <div class="menu-card" data-category="indian"><h3>Biryani</h3><p>₹250</p></div>
+        <div class="menu-card" data-category="indian"><h3>Butter Chicken</h3><p>₹280</p></div>
+        <div class="menu-card" data-category="indian"><h3>Paneer Tikka</h3><p>₹220</p></div>
+        <div class="menu-card" data-category="indian"><h3>Dal Makhani</h3><p>₹180</p></div>
+        <div class="menu-card" data-category="indian"><h3>Rogan Josh</h3><p>₹300</p></div>
+        <div class="menu-card" data-category="indian"><h3>Chole Bhature</h3><p>₹150</p></div>
+        <div class="menu-card" data-category="indian"><h3>Rajma Chawal</h3><p>₹140</p></div>
+        <div class="menu-card" data-category="indian"><h3>Fish Curry</h3><p>₹260</p></div>
+        <div class="menu-card" data-category="indian"><h3>Tandoori Chicken</h3><p>₹320</p></div>
+        <div class="menu-card" data-category="indian"><h3>Kadhi Pakora</h3><p>₹160</p></div>
+        <div class="menu-card" data-category="indian"><h3>Aloo Paratha</h3><p>₹90</p></div>
+        <div class="menu-card" data-category="indian"><h3>Masala Dosa</h3><p>₹120</p></div>
+        <div class="menu-card" data-category="indian"><h3>Idli Sambar</h3><p>₹100</p></div>
+        <div class="menu-card" data-category="indian"><h3>Veg Thali</h3><p>₹200</p></div>
+        <div class="menu-card" data-category="indian"><h3>Chicken Curry</h3><p>₹270</p></div>
+
+        <!-- CHINESE -->
+        <div class="menu-card" data-category="chinese"><h3>Hakka Noodles</h3><p>₹180</p></div>
+        <div class="menu-card" data-category="chinese"><h3>Fried Rice</h3><p>₹170</p></div>
+        <div class="menu-card" data-category="chinese"><h3>Chilli Chicken</h3><p>₹220</p></div>
+        <div class="menu-card" data-category="chinese"><h3>Spring Rolls</h3><p>₹150</p></div>
+        <div class="menu-card" data-category="chinese"><h3>Manchurian</h3><p>₹190</p></div>
+        <div class="menu-card" data-category="chinese"><h3>Schezwan Noodles</h3><p>₹200</p></div>
+        <div class="menu-card" data-category="chinese"><h3>Hot & Sour Soup</h3><p>₹120</p></div>
+        <div class="menu-card" data-category="chinese"><h3>Sweet Corn Soup</h3><p>₹110</p></div>
+        <div class="menu-card" data-category="chinese"><h3>Garlic Chicken</h3><p>₹230</p></div>
+        <div class="menu-card" data-category="chinese"><h3>Kung Pao Chicken</h3><p>₹260</p></div>
+        <div class="menu-card" data-category="chinese"><h3>Dim Sum</h3><p>₹240</p></div>
+        <div class="menu-card" data-category="chinese"><h3>Chow Mein</h3><p>₹180</p></div>
+        <div class="menu-card" data-category="chinese"><h3>Dragon Chicken</h3><p>₹250</p></div>
+        <div class="menu-card" data-category="chinese"><h3>Veg Manchurian</h3><p>₹180</p></div>
+        <div class="menu-card" data-category="chinese"><h3>Paneer Chilli</h3><p>₹200</p></div>
+
+        <!-- CONTINENTAL -->
+        <div class="menu-card" data-category="continental"><h3>Pasta Alfredo</h3><p>₹220</p></div>
+        <div class="menu-card" data-category="continental"><h3>Grilled Chicken</h3><p>₹300</p></div>
+        <div class="menu-card" data-category="continental"><h3>Steak</h3><p>₹400</p></div>
+        <div class="menu-card" data-category="continental"><h3>Caesar Salad</h3><p>₹180</p></div>
+        <div class="menu-card" data-category="continental"><h3>Pizza Margherita</h3><p>₹250</p></div>
+        <div class="menu-card" data-category="continental"><h3>Lasagna</h3><p>₹280</p></div>
+        <div class="menu-card" data-category="continental"><h3>French Fries</h3><p>₹120</p></div>
+        <div class="menu-card" data-category="continental"><h3>Burger</h3><p>₹150</p></div>
+        <div class="menu-card" data-category="continental"><h3>Garlic Bread</h3><p>₹130</p></div>
+        <div class="menu-card" data-category="continental"><h3>Mac & Cheese</h3><p>₹210</p></div>
+        <div class="menu-card" data-category="continental"><h3>Chicken Wings</h3><p>₹260</p></div>
+        <div class="menu-card" data-category="continental"><h3>Fish & Chips</h3><p>₹300</p></div>
+        <div class="menu-card" data-category="continental"><h3>Omelette</h3><p>₹100</p></div>
+        <div class="menu-card" data-category="continental"><h3>Sandwich</h3><p>₹140</p></div>
+        <div class="menu-card" data-category="continental"><h3>Panini</h3><p>₹180</p></div>
+
+        <!-- DRINKS -->
+        <div class="menu-card" data-category="drinks"><h3>Coffee</h3><p>₹80</p></div>
+        <div class="menu-card" data-category="drinks"><h3>Tea</h3><p>₹50</p></div>
+        <div class="menu-card" data-category="drinks"><h3>Lassi</h3><p>₹90</p></div>
+        <div class="menu-card" data-category="drinks"><h3>Cold Coffee</h3><p>₹120</p></div>
+        <div class="menu-card" data-category="drinks"><h3>Fresh Juice</h3><p>₹100</p></div>
+        <div class="menu-card" data-category="drinks"><h3>Mojito</h3><p>₹140</p></div>
+        <div class="menu-card" data-category="drinks"><h3>Milkshake</h3><p>₹130</p></div>
+        <div class="menu-card" data-category="drinks"><h3>Soda</h3><p>₹60</p></div>
+        <div class="menu-card" data-category="drinks"><h3>Mocktail</h3><p>₹150</p></div>
+        <div class="menu-card" data-category="drinks"><h3>Green Tea</h3><p>₹70</p></div>
+        <div class="menu-card" data-category="drinks"><h3>Hot Chocolate</h3><p>₹110</p></div>
+        <div class="menu-card" data-category="drinks"><h3>Iced Tea</h3><p>₹100</p></div>
+        <div class="menu-card" data-category="drinks"><h3>Lemonade</h3><p>₹80</p></div>
+        <div class="menu-card" data-category="drinks"><h3>Energy Drink</h3><p>₹150</p></div>
+        <div class="menu-card" data-category="drinks"><h3>Smoothie</h3><p>₹140</p></div>
+
+    </div>
+</div>
             </div>
         </div>
         <div class="footer">
